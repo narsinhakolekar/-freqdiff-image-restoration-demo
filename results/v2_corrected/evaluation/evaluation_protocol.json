@@ -1,0 +1,27 @@
+{
+  "evaluation_version": "FreqDiff V2 held-out test evaluation",
+  "frequency_checkpoint": "checkpoints/v2_corrected/frequency_best.pth",
+  "spatial_checkpoint": "checkpoints/v2_corrected/spatial_best.pth",
+  "test_split": "data/splits.json -> test",
+  "test_source_images": 80,
+  "patches_per_source_image": 9,
+  "total_test_patches": 720,
+  "image_size": 128,
+  "batch_size": 2,
+  "evaluation_degradation": {
+    "gaussian_blur_sigma": 1.0,
+    "gaussian_noise_sigma": 0.058823529411764705
+  },
+  "diffusion_timesteps": 1000,
+  "beta_start": 0.0001,
+  "beta_end": 0.02,
+  "sampler": "deterministic DDIM for direct x0 prediction",
+  "ddim_steps": 25,
+  "initial_noise_seed_rule": "30000 + batch_number (1-indexed)",
+  "same_initial_noise_for_both_models": true,
+  "metrics_aggregation": "mean of 9 patches within each source image",
+  "statistical_unit": "source image",
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 2601,
+  "inference_precision": "bf16"
+}

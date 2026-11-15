@@ -1,0 +1,37 @@
+[
+  {
+    "epoch": 1,
+    "train_min_snr_x0_loss": 0.022175397528126473,
+    "val_min_snr_x0_loss": 0.009977751964537636,
+    "min_snr_gamma": 5.0,
+    "training_samples_seen": 5120
+  },
+  {
+    "epoch": 2,
+    "train_min_snr_x0_loss": 0.009669238008032455,
+    "val_min_snr_x0_loss": 0.007893559083160855,
+    "min_snr_gamma": 5.0,
+    "training_samples_seen": 5120
+  },
+  {
+    "epoch": 3,
+    "train_min_snr_x0_loss": 0.00845014868771594,
+    "val_min_snr_x0_loss": 0.007728766848499428,
+    "min_snr_gamma": 5.0,
+    "training_samples_seen": 5120
+  },
+  {
+    "epoch": 4,
+    "train_min_snr_x0_loss": 0.007292463271653671,
+    "val_min_snr_x0_loss": 0.006194371502832041,
+    "min_snr_gamma": 5.0,
+    "training_samples_seen": 5120
+  },
+  {
+    "epoch": 5,
+    "train_min_snr_x0_loss": 0.007459874838309943,
+    "val_min_snr_x0_loss": 0.0060330493006160975,
+    "min_snr_gamma": 5.0,
+    "training_samples_seen": 5120
+  }
+]

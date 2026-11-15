@@ -1,0 +1,1 @@
+"""FreqDiff model definitions."""

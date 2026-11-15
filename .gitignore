@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data and local-only files (do not upload DIV2K)
+/data/
+datasets/
+DIV2K*/
+*.zip
+*.7z
+*.rar
+
+# Training outputs / logs
+outputs/
+runs/
+wandb/
+logs/
+*.log
+
+# Keep only the two inference checkpoints required by this app.
+/checkpoints/*
+!/checkpoints/v2_corrected/
+/checkpoints/v2_corrected/*
+!/checkpoints/v2_corrected/frequency_best.pth
+!/checkpoints/v2_corrected/spatial_best.pth
+
+# Keep only V2 research artifacts used by the dashboard.
+/results/*
+!/results/v2_corrected/
+/results/v2_corrected/*
+!/results/v2_corrected/frequency_training_history.json
+!/results/v2_corrected/spatial_training_history.json
+!/results/v2_corrected/evaluation/
+/results/v2_corrected/evaluation/*
+!/results/v2_corrected/evaluation/summary.csv
+!/results/v2_corrected/evaluation/per_image_metrics.csv
+!/results/v2_corrected/evaluation/paired_bootstrap.csv
+!/results/v2_corrected/evaluation/evaluation_protocol.json
